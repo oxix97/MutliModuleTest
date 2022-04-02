@@ -1,6 +1,5 @@
 package com.example.myapplication.presentation.ui.test
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityTestBinding
@@ -15,7 +14,6 @@ class TestActivity : BaseActivity<ActivityTestBinding>(R.layout.activity_test) {
         super.onCreate(savedInstanceState)
         initTestData()
     }
-
 
     private fun initTestData() {
         testViewModel.getTestData()

@@ -9,13 +9,13 @@ import org.koin.core.context.GlobalContext
 import org.koin.core.logger.Level
 
 class AndroidKoddakZApplication : Application() {
-    init{
+    init {
         instance = this
     }
 
-    companion object{
+    companion object {
         var instance: AndroidKoddakZApplication? = null
-        fun context() : Context {
+        fun context(): Context {
             return instance!!.applicationContext
         }
     }
